@@ -1,0 +1,6 @@
+strawberry
+apple
+watermelon
+blackberry
+lemon
+pear

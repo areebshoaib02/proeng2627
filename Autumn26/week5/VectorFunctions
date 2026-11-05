@@ -1,0 +1,22 @@
+#include <iostream>
+#include <vector>
+
+int MinVectorElement (const std::vector <double>& vin){
+    if(vin.empty()){
+        return -1;
+    }
+    else{
+        int MinIndex = 0;
+        for(int i = 0; i < vin.size(); i ++){
+            if(vin[i] < vin[MinIndex]){
+                MinIndex = i;
+            }
+        }
+        return MinIndex;
+    }
+}
+
+int main (){
+    std::vector <double> v = {1, 2, 0, -0.25, -29, 31};
+    std::cout << MinVectorElement(v) << std::endl;
+}
